@@ -1,0 +1,60 @@
+$dark_colour_a: #ff0000;
+$dark_colour_b: #00ff00;
+$dark_colour_c: #0000ff;
+$light_colour_a: #ffaaaa;
+$light_colour_b: #aaffaa;
+$light_colour_c: #aaaaff;
+$light_font_colour: #ffffff;
+$dark_font_colour: #000000;
+
+header,
+main,
+section,
+footer {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background: $dark_colour_a;
+  color: $light_font_colour;
+  height: 200px;
+}
+
+main {
+  background: $dark_colour_b;
+  color: $light_font_colour;
+  height: 400px;
+}
+
+section {
+  float: left;
+  height: 300px;
+  margin: 1%;
+}
+
+section.left {
+  background: $light_colour_a;
+  color: $dark_font_colour;
+  width: 20%;
+}
+
+section.middle {
+  background: $light_colour_b;
+  color: $dark_font_colour;
+  width: 50%;
+}
+
+section.right {
+  background: $light_colour_c;
+  color: $dark_font_colour;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+  background: $dark_colour_c;
+  color: $light_font_colour;
+  height: 100px;
+}
