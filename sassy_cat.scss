@@ -1,11 +1,11 @@
-$dark_colour_a: #ff0000;
-$dark_colour_b: #00ff00;
-$dark_colour_c: #0000ff;
-$light_colour_a: #ffaaaa;
-$light_colour_b: #aaffaa;
-$light_colour_c: #aaaaff;
-$light_font_colour: #ffffff;
-$dark_font_colour: #000000;
+$dark_colour_a: #2B69E8;
+$dark_colour_b: #03E899;
+$dark_colour_c: #850DFF;
+$light_colour_a: #FF87CF;
+$light_colour_b: #CEBDFF;
+$light_colour_c: #B2FFA4;
+$light_font_colour: #CDD8FF;
+$dark_font_colour: #FF008A;
 
 header,
 main,
@@ -58,3 +58,44 @@ footer {
   color: $light_font_colour;
   height: 100px;
 }
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+section.middle {
+  width: 600px / 960px * 100%;
+}
+
+section.left,
+section.right {
+  width: 150px / 960px * 100%;
+}
+main {
+    section {
+        font-family: fantasy;
+    }
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(50px); }

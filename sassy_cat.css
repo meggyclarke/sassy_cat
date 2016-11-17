@@ -7,13 +7,13 @@ footer {
   padding: 20px; }
 
 header {
-  background: #ff0000;
-  color: #ffffff;
+  background: #2B69E8;
+  color: #CDD8FF;
   height: 200px; }
 
 main {
-  background: #00ff00;
-  color: #ffffff;
+  background: #03E899;
+  color: #CDD8FF;
   height: 400px; }
 
 section {
@@ -22,24 +22,54 @@ section {
   margin: 1%; }
 
 section.left {
-  background: #ffaaaa;
-  color: #000000;
+  background: #FF87CF;
+  color: #FF008A;
   width: 20%; }
 
 section.middle {
-  background: #aaffaa;
-  color: #000000;
+  background: #CEBDFF;
+  color: #FF008A;
   width: 50%; }
 
 section.right {
-  background: #aaaaff;
-  color: #000000;
+  background: #B2FFA4;
+  color: #FF008A;
   width: 20%; }
 
 footer {
   clear: both;
-  background: #0000ff;
-  color: #ffffff;
+  background: #850DFF;
+  color: #CDD8FF;
   height: 100px; }
+
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+section.middle {
+  width: 62.5%; }
+
+section.left,
+section.right {
+  width: 15.625%; }
+
+main section {
+  font-family: fantasy; }
+
+.box {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px; }
 
 /*# sourceMappingURL=sassy_cat.css.map */
